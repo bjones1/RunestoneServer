@@ -25,6 +25,15 @@ if [ -z "$RUNESTONE_HOST" ]; then
     exit 1
 fi
 
+# For development make sure we are up to date with the latest from Github.
+if [ $WEB2PY_CONFIG == "development" ]; then
+    pip install --upgrade https://github.com/bjones1/RunestoneComponents/archive/lp.zip
+    ##info "Install PIC24 parser"
+    ##pushd ${RUNESTONE_PATH}/books/pic24_asm_to_c/_sources/build/PIC24Lexer
+    ##pip install -e .
+    ##popd
+fi
+
 # Initialize the database
 if [ ! -f "$stamp" ]; then
 
