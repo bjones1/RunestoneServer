@@ -299,3 +299,13 @@ There are a couple of ways to get at the logger output:
 
 
 
+
+
+
+docker build -t runestone/server .
+docker-compose up -d
+CONTAINER_ID=$(echo `docker-compose ps -q runestone` |  cut -c1-12)
+docker exec -it $CONTAINER_ID bash
+docker-compose logs runestone
+docker-compose stop
+docker-compose rm
