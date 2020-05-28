@@ -48,7 +48,6 @@ script:
 - cp applications/runestone/tests/.coveragerc .
 # Now actually run the tests.
 - pytest -v applications/runestone/tests
-- coveralls
 notifications:
   slack:
     secure: OfeZ/+YHpSl7GNFkzEKu0uObuMdymKmDEeDyfB++RaglalcgkDQAqrCPx+YVw6brXOHGeC6BkGJe/Fs143Ai8/yf38nMmZg/dej5nLgZNST67jWaapIydx5QeuCrsRKvUP+z6yEYoBkYXTsYPyTiKGGsyzvX6dimZRT4nD8qrv0=
