@@ -441,6 +441,7 @@ db.define_table(
 # mail.settings.server = settings.email_server
 # mail.settings.sender = settings.email_sender
 # mail.settings.login = settings.email_login
+mail.settings.ssl = True
 auth.messages.reset_password = (
     '<html>Click on <a href="%(link)s">this link</a> to reset your password.</html>'
 )
