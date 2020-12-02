@@ -812,7 +812,7 @@ def test_GetCompletionStatus(test_client, test_user_1, runestone_db_tools):
     test_client.validate("ajax/getAllCompletionStatus")
     res = json.loads(test_client.text)
     print(res)
-    assert len(res) == 2
+    assert len(res) == 4
 
 
 def test_updatelastpage(test_client, test_user_1, runestone_db_tools):

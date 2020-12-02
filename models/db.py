@@ -252,6 +252,9 @@ def is_editor(userid):
         return False
 
 
+current.verifyInstructorStatus = verifyInstructorStatus
+
+
 class IS_COURSE_ID:
     """used to validate that a course name entered (e.g. devcourse) corresponds to a
     valid course ID (i.e. db.courses.id)"""
